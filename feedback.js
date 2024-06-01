@@ -24,6 +24,7 @@ globalThis.addFeedbackBox = function() {
     document.getElementById("helperFeedbackSend").disabled = true
     const content = document.getElementById("helperFeedbackInput").value || "";
     const data = {
+      source: "HKU Moodle Helper",
       time: new Date().toISOString(),
       content: content
     };
